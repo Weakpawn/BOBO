@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: url('duck.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+/* Style for left and right containers */
+#left-container, #right-container {
+    width: 20%;
+    height: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Center the header */
+h1 {
+    color: #333;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Styles for the images */
+#left-image img {
+    width: 200%; /* Ensures the image fits within the container */
+    max-width: 250px; /* Limits the image size */
+    height: auto; /* Keeps the aspect ratio */
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+#right-image img {
+    width: 350px; 
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+}
+
+#star-message-container {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #D1006F;
+}
+
+#star-message img {
+    color:#D1006F;
+    display: inline;
+
+}
+
+#progress-section {
+    background-color: #D1006F; /* Cerise Red for the background */
+    color: black;  /* White text color */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#progress-message {
+    font-size: 16px;
+    color: #D1006F; /* White text inside message box */
+}
+
+
+
+/* Styles for content sections under images */
+#progress-section, #qoqo {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border: 2px solid #00796b;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Sets a width that works well with your layout */
+    max-width: 250px; /* Limits the width to fit within the containers */
+    height: 300px;
+    margin-top: 20px;
+}
+
+#track-progress-btn {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#track-progress-btn:hover {
+    background-color: #007B9E;
+}
+
+#quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #800020;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #dashboard {
+        flex-direction: column;
+        align-items: center;
+    }
+    #left-container, #right-container {
+        width: 90%;
+    }
+    #progress-section, #qoqo {
+        width: 100%; /* Expands content sections to fill the container on small screens */
+        max-width: none; /* Removes the width limit for smaller screens */
+    }
+}

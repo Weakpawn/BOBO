@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOBO's Rowing Dashboard!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="dashboard">
+        <div id="left-container">
+            <div id="left-image">
+                <img src="bobo.jpg" alt="Bobo">
+            </div>
+            <div id="progress-section">
+                <h2>Track Your Progress</h2>
+                <p>Rows Completed:</p>
+                <input type="number" min="0" id="rows-completed">
+                <label><input type="checkbox" id="lift"> Did you lift today?</label><br>
+                <label><input type="checkbox" id="recovery"> Did you do recovery techniques today?</label><br>
+                <button id="track-progress-btn" onclick="submitProgress()">Submit Progress</button>
+            </div>
+        </div>
+
+        <h1>BOBO's Rowing Dashboard!</h1>
+
+        <div id="right-container">
+            <div id="right-image">
+                <img src="carina.jpg" alt="Carina">
+            </div>
+            <div id="qoqo">
+                <h2>QOQO QUOTE OF THE DAY</h2>
+                <p id="quote">Loading quote...</p>
+            </div>
+        </div>
+
+        <div id="star-message"></div>
+        <div id="progress-display"></div>
+        
+    </div>
+
+    <script src="script.js"></script> <!-- Assuming your JS is in script.js -->
+</body>
+</html>
